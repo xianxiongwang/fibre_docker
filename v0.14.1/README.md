@@ -11,19 +11,6 @@ Docker for Bitcoind Fibre v0.14.1 FIBRE 0.7
 ```
 curl -fsSL get.docker.com -o get-docker.sh
 sh get-docker.sh
-Docker for Bitcoind Fibre v0.14.1 FIBRE 0.7
-===================================
-
-* OS: `Ubuntu 16.04 LTS`
-* Docker Image OS: `Ubuntu 16.04 LTS`
-* `Fibre`
-  * `https://github.com/bitcoinfibre/bitcoinfibre/archive/v0.14.1-fibre0.7.tar.gz`
-  * `https://github.com/bitcoinfibre/bitcoinfibre/releases`
-
-## Install Docker
-```
-curl -fsSL get.docker.com -o get-docker.sh
-sh get-docker.sh
 
 service docker start
 service docker status
