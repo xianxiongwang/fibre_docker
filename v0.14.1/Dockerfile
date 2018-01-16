@@ -41,11 +41,11 @@ RUN mkdir -p /root/scripts
 #ADD bitmain-monitor-bitcoind.sh   /root/scripts/bitmain-monitor-bitcoind.sh
 
 # crontab shell
-#ADD add_leaderboard_nodes.sh          /root/scripts/add_leaderboard_nodes.sh
+ADD add_leaderboard_nodes.sh          /root/scripts/add_leaderboard_nodes.sh
 # if your nodes is in China(Mainland), please uncomment this line
-#ADD add_leaderboard_nodes_china.sh    /root/scripts/add_leaderboard_nodes_china.sh
-#ADD add_leaderboard_nodes_global.sh   /root/scripts/add_leaderboard_nodes_global.sh
-#ADD crontab.txt /etc/cron.d/bitcoind
+ADD add_leaderboard_nodes_china.sh    /root/scripts/add_leaderboard_nodes_china.sh
+ADD add_leaderboard_nodes_global.sh   /root/scripts/add_leaderboard_nodes_global.sh
+ADD crontab.txt /etc/cron.d/bitcoind
 
 # logrotate
 ADD logrotate-bitcoind /etc/logrotate.d/bitcoind
