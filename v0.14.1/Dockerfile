@@ -47,6 +47,8 @@ ADD add_leaderboard_nodes_china.sh    /root/scripts/add_leaderboard_nodes_china.
 ADD add_leaderboard_nodes_global.sh   /root/scripts/add_leaderboard_nodes_global.sh
 ADD crontab.txt /etc/cron.d/bitcoind
 
+RUN chmod +x /root/scripts/*.sh
+
 # logrotate
 ADD logrotate-bitcoind /etc/logrotate.d/bitcoind
 
