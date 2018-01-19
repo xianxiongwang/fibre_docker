@@ -22,12 +22,12 @@ RUN apt-get install -y libboost-all-dev libzmq3-dev curl wget net-tools
 
 # build bitcoind
 RUN mkdir ~/source
-ADD bitcoinfibre-master-v15.0.1.zip /root/source/bitcoinfibre-master-v15.0.1.zip
+ADD bitcoinfibre-master-v0.15.0.1.zip /root/source/bitcoinfibre-master-v0.15.0.1.zip
 
 #RUN ls /root/source/bitcoinfibre-master-v15.0.1.zip/
 #RUN ls /root/source/bitcoinfibre-master-v15.0.1.zip/bitcoinfibre-master/
 
-RUN cd /root/source/bitcoinfibre-master-v15.0.1.zip/bitcoinfibre-master/ \
+RUN cd /root/source/bitcoinfibre-master-v0.15.0.1.zip/bitcoinfibre-master/ \
   && ./autogen.sh \
   && ./configure --disable-wallet --disable-tests \
   && make \
