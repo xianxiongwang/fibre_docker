@@ -29,8 +29,8 @@ cd fibre_docker/v15.0.1
 # if you install nodes in China, please check "Dockerfile" and uncomment some lines
 
 # build
-docker build -t fibre-bitcoind:v15.0.1 .
-# docker build --no-cache -t fibre-bitcoind:v15.0.1 .
+docker build -t fibre-bitcoind:v0.15.0.1 .
+# docker build --no-cache -t fibre-bitcoind:v0.15.0.1 .
 
 # mkdir for bitcoind
 mkdir -p /work/bitcoind
