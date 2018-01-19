@@ -65,7 +65,7 @@ addtrustedudpnode=123.123.123.123:8334,random_string,random_string
 
 ```
 # start
-docker run -it -v /work/bitcoind:/root/.bitcoin --name fibre-bitcoind -p 8333:8333 -p 8332:8332 -p 8334:8334/udp --restart always -d fibre-bitcoind:v15.0.1
+docker run -it -v /work/bitcoind:/root/.bitcoin --name fibre-bitcoind -p 8333:8333 -p 8332:8332 -p 8334:8334/udp --restart always -d fibre-bitcoind:v0.15.0.1
 
 # login
 docker exec -it fibre-bitcoind /bin/bash
